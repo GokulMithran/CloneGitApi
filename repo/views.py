@@ -25,7 +25,6 @@ def home(request):
             user_profile.userlocation=user_data.get('location')
             user_profile.userbio=user_data.get('bio')
             user_profile.usertwitter=user_data.get('twitter_username')
-            # print(user_data['location'])
             user_profile.repositories.clear()
 
             for repo_data in repositories:
