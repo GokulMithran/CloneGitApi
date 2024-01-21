@@ -27,7 +27,7 @@ This Django project allows users to fetch and display GitHub user profiles along
 >   **cd git-profile-django**
 ### Create a virtual environment:
 
-**python -m venv venv**
+> **python -m venv venv**
 ### Activate the virtual environment:
 
  ### On Windows:
