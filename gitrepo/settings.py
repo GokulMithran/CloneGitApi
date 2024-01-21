@@ -77,15 +77,12 @@ ASGI_APPLICATION = "gitrepo.asgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-DATABASES = {
-    "default": dj_database_url.parse('postgres://gitapi_user:ZDLMRkAo8cjSoRoCxiRr0dow1GvfdsLL@dpg-cmma9b0l5elc73capeq0-a.oregon-postgres.render.com/gitapi')
-}
+ DATABASES = {
+     'default': {
+         'ENGINE': 'django.db.backends.sqlite3',
+         'NAME': BASE_DIR / 'db.sqlite3',
+    }
+ }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
