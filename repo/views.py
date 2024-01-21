@@ -12,7 +12,7 @@ def home(request):
         repos_per_page=request.POST.get('repos_per_page')
         api_url = f'https://api.github.com/users/{username}'
         headers={
-            "Authorization":"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"
+            "Authorization":Give your Github Access Token
         }
 
         try:
