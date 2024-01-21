@@ -33,8 +33,8 @@ On Windows:
 
 
 **.\venv\Scripts\activate**
-On macOS/Linux:
 
+On macOS/Linux:
 
 **source venv/bin/activate**
 Install project dependencies:
