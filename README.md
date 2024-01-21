@@ -45,9 +45,10 @@ This Django project allows users to fetch and display GitHub user profiles along
 
 > **python manage.py migrate**
 ### Usage
+> repo/views.py
+ Give your Github Access Token in Headers
+  
 ### Run the development server:
-
-
 > python manage.py runserver
 Open your web browser and go to http://127.0.0.1:8000/
 
