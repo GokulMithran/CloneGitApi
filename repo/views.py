@@ -22,7 +22,7 @@ def home(request):
         try:
             user_data = requests.get(api_url).json()
             repositories = requests.get(f'{api_url}/repos?per_page={int(repos_per_page)}',headers=headers).json()
-            # pp=request.get(f'{api_url}/repos?per_page=10')
+          
             # Create or update user profile
             user_profile, created = UserProfile.objects.get_or_create(username=username, defaults={'avatar_url': user_data.get('avatar_url', '')})
             user_profile.avatar_url = user_data.get('avatar_url', '')
@@ -45,21 +45,13 @@ def home(request):
                     topic, _ = Topic.objects.get_or_create(name=topic_name)
                     repo.topics.add(topic)
             user_profile.save()
-            # p = Paginator(user_profile.repositories.all(), 10)
-            # page = request.GET.get('page')
-            # venues = p.get_page(page)
-            # nums = "a" * venues.paginator.num_pages
             
 
             return render(request, 'index.html', {'user_profile': user_profile})
         except requests.exceptions.RequestException as e:
             return render(request, 'error.html', {'error_message': str(e)})
 
-    # if request.method == 'GET':
-    #         p = Paginator(user_profile.repositories.all(), 10)
-    #         page = request.GET.get('page')
-    #         venues = p.get_page(page)
-    #         return render(request, 'index.html',{'venues': venues})    
+    
         
     return render(request, 'index.html')
     
