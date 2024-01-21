@@ -23,7 +23,8 @@ This Django project allows users to fetch and display GitHub user profiles along
 ## 1. Clone the repository:
 
 >   **git clone https://github.com/your-username/git-profile-django.git**
->  **cd git-profile-django**
+
+>   **cd git-profile-django**
 ### Create a virtual environment:
 
 **python -m venv venv**
