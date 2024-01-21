@@ -22,8 +22,8 @@ This Django project allows users to fetch and display GitHub user profiles along
 
 1. Clone the repository:
 
-   **git clone https://github.com/your-username/git-profile-django.git**
-   **cd git-profile-django**
+>   **git clone https://github.com/your-username/git-profile-django.git**
+>  **cd git-profile-django**
 Create a virtual environment:
 
 **python -m venv venv**
@@ -32,22 +32,22 @@ Activate the virtual environment:
 On Windows:
 
 
-**.\venv\Scripts\activate**
+> **.\venv\Scripts\activate**
 
 On macOS/Linux:
 
-**source venv/bin/activate**
+> **source venv/bin/activate**
 Install project dependencies:
 
-**pip install -r requirements.txt**
+> **pip install -r requirements.txt**
 Apply database migrations:
 
-**python manage.py migrate**
+> **python manage.py migrate**
 Usage
 Run the development server:
 
 
-python manage.py runserver
+> python manage.py runserver
 Open your web browser and go to http://127.0.0.1:8000/
 
 Enter a GitHub username in the provided form and click "Fetch Profile."
